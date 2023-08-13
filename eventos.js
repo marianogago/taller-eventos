@@ -1,4 +1,10 @@
 let divv = document.getElementById("hola")
-divv.addEventListener("click", () => {
-    alert("Hola! Soy el Div")
+divv.addEventListener("click", function(){
+    alert("Hola! Soy el Div");
 })
+
+function saludar(event)
+{
+    alert("Hola!");
+    event.stopPropagation();
+}
